@@ -11,7 +11,7 @@ import javax.swing.JTextField;
  *
  * @author X1
  */
-public class Validate {
+public class MyValidate {
     
     public Boolean isEmpty(JTextField txt, StringBuilder stb, String msq){
         if (txt.getText().trim().isEmpty()) {

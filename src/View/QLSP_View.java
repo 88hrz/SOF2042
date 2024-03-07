@@ -7,7 +7,7 @@ package View;
 import Model.KhuyenMai;
 import Model.SanPham;
 import Service.QLSP_Service;
-import Validator.Validate;
+import Validator.MyValidate;
 import ViewModel.QLSP_ViewModel;
 import com.formdev.flatlaf.themes.FlatMacDarkLaf;
 import java.util.ArrayList;
@@ -71,7 +71,7 @@ public class QLSP_View extends javax.swing.JFrame {
     //VALIDATE
     public Boolean validateSP(){
         StringBuilder stb = new StringBuilder();
-        Validate v = new Validate();
+        MyValidate v = new MyValidate();
         
         v.isEmpty(txtMaSP, stb, "Ma SP dang trong!");
         v.isEmpty(txtTenSP, stb, "Ten SP dang trong!");
